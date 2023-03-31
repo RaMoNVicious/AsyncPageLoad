@@ -11,7 +11,7 @@
         android:id="@+id/label"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Enter URL:"
+        android:text="@string/label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -27,25 +27,38 @@
         app:layout_constraintTop_toBottomOf="@id/label" />
 
     <EditText
-        android:id="@+id/txtAddress"
+        android:id="@+id/txt_url"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="www.example.com"
+        android:hint="@string/address_hint"
+        android:imeOptions="actionDone"
         android:singleLine="true"
         app:layout_constraintBaseline_toBaselineOf="@id/protocol"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/protocol" />
 
+    <Button
+        android:id="@+id/btn_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/btn_load"
+        android:onClick="onLoadClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_url"/>
+
     <EditText
-        android:id="@+id/txtPage"
+        android:id="@+id/txt_page"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="16dp"
         android:gravity="top|start"
-        android:text="asdljkfhalsdjfhlasjdhfalsdkjfh sdlk jalsd kfl sjfhlsfhd\nasdlfhasldkjfhalskjdflasdhf"
+        android:inputType="none"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtAddress" />
+        app:layout_constraintTop_toBottomOf="@id/btn_load" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

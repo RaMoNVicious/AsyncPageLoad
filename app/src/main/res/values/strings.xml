@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Async Page Load</string>
+    <string name="label">Enter URL:</string>
+    <string name="address_hint">www.example.com</string>
+    <string name="btn_load">Load</string>
+    <string name="connection_error">Error: No Internet Connection!</string>
+    <string name="address_error">Error: URL is NOT Valid!</string>
 
     <string-array name="protocols">
         <item>http://</item>
